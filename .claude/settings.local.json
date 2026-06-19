@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:app.notion.com)",
+      "PowerShell(New-Item *)",
+      "PowerShell(claude mcp *)",
+      "Bash(claude mcp *)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# 시스템
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 민감 정보
+.env
+*.key
+*.token
+
+# Claude 로컬 설정 (토큰 포함 가능)
+.claude.json
+
+# 임시 파일
+*.tmp
+*.log
