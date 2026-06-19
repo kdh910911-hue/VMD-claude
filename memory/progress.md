@@ -17,6 +17,13 @@
 ```
 2026-06-19 — VMD ops Claude Code 시스템 초기 구축
              CLAUDE.md, VMD_MASTER.md, 에이전트 5인, 세션 프로토콜 적용
+
+2026-06-19 — config-ops 레포 검토 + VMD Ops 자동화 고도화
+             A. Stop 훅 업그레이드 — memory/backup/ 자동 스냅샷, 최근 3개 유지
+             B. check_size.py — Edit/Write 후 MD 파일 크기 자동 감지 (PostToolUse 훅)
+             C. block_binary_reads.py — 이미지/PDF 실수 Read 차단 (PreToolUse 훅)
+             D. VMD_MASTER 정합성 감지 — decisions 날짜 > MASTER 날짜 시 자동 경고
+             AI VMD Creator 에이전트 추가 (에이전트 6인 체계)
 ```
 
 ---

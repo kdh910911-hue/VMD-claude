@@ -11,13 +11,36 @@
     ]
   },
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"D:/0.vmd ops/scripts/block_binary_reads.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"D:/0.vmd ops/scripts/check_size.py\""
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File \"D:\\0.vmd ops\\scripts\\vmd-stop-hook.ps1\""
+            "command": "powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File \"D:\\0.vmd ops\\scripts\\vmd-stop-hook.ps1\"",
+            "statusMessage": "memory 백업 + 완료 항목 정리 + 정합성 감지 중..."
           }
         ]
       }
