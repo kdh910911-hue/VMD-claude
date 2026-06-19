@@ -6,7 +6,8 @@
       "PowerShell(claude mcp *)",
       "Bash(claude mcp *)",
       "PowerShell(git *)",
-      "Bash(git *)"
+      "Bash(git *)",
+      "mcp__github__get_file_contents"
     ]
   },
   "hooks": {

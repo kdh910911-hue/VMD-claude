@@ -1,4 +1,4 @@
-# VMD Ops — Stop Hook
+﻿# VMD Ops — Stop Hook
 # Claude 세션 종료 시 자동 실행:
 # 1. 오늘 작업 로그 업데이트 (memory/daily/YYYY-MM-DD.md)
 # 2. Git 변경사항 확인 → 커밋/푸쉬 여부 알림

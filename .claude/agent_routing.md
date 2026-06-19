@@ -9,7 +9,8 @@
 
 | 요청 키워드/유형 | 자동 호출 에이전트 |
 |---------------|-----------------|
-| 사진 분석, 컬러, 볼륨, 포컬포인트, Higgsfield | Visual Director |
+| 사진 분석, 컬러, 볼륨, 포컬포인트 | Visual Director |
+| AI 시뮬레이션, 무드보드, Before/After, Higgsfield 프롬프트, 시각화, 프롬프트 설계 | AI VMD Creator |
 | 배치, 동선, 도면, Zone 변경, 집기, 데드존 | Space Planner |
 | 트렌드, 경쟁사, Zara Kids, H&M, 글로벌 | Trend Researcher |
 | 시즌 기획, 테마, 컨셉, 컬러 팔레트, plan.md | Season Planner |
@@ -23,10 +24,12 @@
 사진 분석 + 배치 변경 요청
   → Visual Director 먼저 (현황 파악)
   → Space Planner 후 (변경안 설계)
+  → AI VMD Creator (Before/After 시뮬레이션 시각화)
 
 시즌 준비 요청
   → Trend Researcher 먼저 (트렌드 인풋)
   → Season Planner 후 (기획 문서화)
+  → AI VMD Creator (시즌 무드보드 + Higgsfield 프롬프트)
 
 변경 완료 후 요청
   → Feedback Coach (회고 + record.md 저장)

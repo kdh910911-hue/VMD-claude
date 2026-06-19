@@ -47,10 +47,11 @@ Zone C — 중앙 / Zone D — 코너
 
 ---
 
-## 에이전트 5인 (.claude/agents/)
+## 에이전트 6인 (.claude/agents/)
 | 에이전트 | 파일 | 핵심 역할 |
 |---------|------|----------|
-| Visual Director | visual-director.md | 매장 사진 분석 + Higgsfield 프롬프트 |
+| Visual Director | visual-director.md | 매장 사진 분석 + 컬러/볼륨/포컬포인트 평가 |
+| AI VMD Creator | ai-vmd-creator.md | AI 시뮬레이션·무드보드·Before/After 시각화 + Higgsfield 프롬프트 |
 | Space Planner | space-planner.md | 동선/배치 기획 + 도면 생성 명령 |
 | Trend Researcher | trend-researcher.md | 글로벌 트렌드 서치 + 경쟁사 분석 |
 | Season Planner | season-planner.md | 시즌 기획 문서 → seasons/[시즌]/plan.md |
@@ -62,7 +63,7 @@ Zone C — 중앙 / Zone D — 코너
 ```
 D:\0.vmd ops\
 ├── CLAUDE.md / VMD_MASTER.md
-├── .claude\agents\          ← 에이전트 5인 MD
+├── .claude\agents\          ← 에이전트 6인 MD
 ├── seasons\[시즌]\
 │   ├── photos\              ← Before/After 사진
 │   ├── plans\               ← 도면, 기획 문서
@@ -77,7 +78,8 @@ D:\0.vmd ops\
 ```
 3주 전: Trend Researcher → 트렌드 서치
 2주 전: Season Planner  → 기획안 작성
-        Visual Director → 현매장 분석 + Higgsfield
+        Visual Director → 현매장 분석
+        AI VMD Creator  → 시즌 무드보드 + Higgsfield 시뮬레이션
 1주 전: Space Planner   → 배치 도면
         Feedback Coach  → 리스크 검증
 당  일: Space Planner   → 도면 최종 확인
@@ -89,6 +91,8 @@ D:\0.vmd ops\
 ## 자주 쓰는 명령
 ```
 "Visual Director, 이 사진 분석해줘. 개선점 TOP 3"
+"AI VMD Creator, Zone A Before/After 시뮬레이션 Higgsfield 프롬프트 만들어줘"
+"AI VMD Creator, 2025 SS 신학기 무드보드용 프롬프트 3가지"
 "Space Planner, Zone A 신학기 배치안 3가지"
 "Trend Researcher, 2025 SS 키즈 글로벌 트렌드 TOP 5"
 "Season Planner, 2025 SS 신학기 기획안 만들어줘"
