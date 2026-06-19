@@ -4,7 +4,22 @@
       "WebFetch(domain:app.notion.com)",
       "PowerShell(New-Item *)",
       "PowerShell(claude mcp *)",
-      "Bash(claude mcp *)"
+      "Bash(claude mcp *)",
+      "PowerShell(git *)",
+      "Bash(git *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File \"D:\\0.vmd ops\\scripts\\vmd-stop-hook.ps1\""
+          }
+        ]
+      }
     ]
   }
 }
