@@ -50,12 +50,12 @@ Zone C — 중앙 / Zone D — 코너
 ## 에이전트 6인 (.claude/agents/)
 | 에이전트 | 파일 | 핵심 역할 |
 |---------|------|----------|
+| Guide Maker | guide-maker.md | 월별 VMD 가이드 + 진열맵 제작 → guides/YYYY/YYYY-MM_가이드.md |
+| Open Planner | open-planner.md | 신규 매장 오픈 레이아웃 기획 + 비용 관리 |
+| VP Stylist | vp-stylist.md | VP Zone 기획 + 시즌 광고 착장 코디 |
+| Rounding Checker | rounding-checker.md | 라운딩 체크리스트 + 즉각 개선안 → rounding/ |
+| Education Editor | education-editor.md | 직원 VMD 교육 자료 제작 → education/ |
 | Visual Director | visual-director.md | 매장 사진 분석 + 컬러/볼륨/포컬포인트 평가 |
-| AI VMD Creator | ai-vmd-creator.md | AI 시뮬레이션·무드보드·Before/After 시각화 + Higgsfield 프롬프트 |
-| Space Planner | space-planner.md | 동선/배치 기획 + 도면 생성 명령 |
-| Trend Researcher | trend-researcher.md | 글로벌 트렌드 서치 + 경쟁사 분석 |
-| Season Planner | season-planner.md | 시즌 기획 문서 → seasons/[시즌]/plan.md |
-| Feedback Coach | feedback-coach.md | 리스크 검증 + 회고 → seasons/[시즌]/record.md |
 
 ---
 
@@ -64,38 +64,32 @@ Zone C — 중앙 / Zone D — 코너
 D:\0.vmd ops\
 ├── CLAUDE.md / VMD_MASTER.md
 ├── .claude\agents\          ← 에이전트 6인 MD
-├── seasons\[시즌]\
-│   ├── photos\              ← Before/After 사진
-│   ├── plans\               ← 도면, 기획 문서
-│   └── record.md            ← 회고 (Feedback Coach)
-├── references\trends|competitors\
-└── higgsfield\              ← 프롬프트 + 생성 이미지
+├── guides\YYYY\             ← 월별 VMD 배포 가이드 아카이브
+├── openings\YYYY\           ← 신규 매장 오픈 레이아웃 + 비용
+├── rounding\YYYY-MM\        ← 매장 라운딩 보고서
+└── education\YYYY\          ← 직원 VMD 교육 자료
 ```
 
 ---
 
-## 시즌 사이클
+## 월별 업무 사이클
 ```
-3주 전: Trend Researcher → 트렌드 서치
-2주 전: Season Planner  → 기획안 작성
-        Visual Director → 현매장 분석
-        AI VMD Creator  → 시즌 무드보드 + Higgsfield 시뮬레이션
-1주 전: Space Planner   → 배치 도면
-        Feedback Coach  → 리스크 검증
-당  일: Space Planner   → 도면 최종 확인
-완료 후: Feedback Coach → 회고 + record.md 저장
+월초  : Guide Maker    → 이달의 VMD 가이드 + 진열맵 초안
+        VP Stylist     → 이달의 VP Zone + 광고 착장 코디
+        Education Editor → 가이드 설명 교육 자료
+라운딩: Visual Director → 매장 사진 분석
+        Rounding Checker → 체크리스트 점검 + 즉각 개선안
+오픈  : Open Planner   → 레이아웃 기획 + 비용 산출
 ```
 
 ---
 
 ## 자주 쓰는 명령
 ```
+"Guide Maker, 이번 달 VMD 가이드 초안 만들어줘"
+"VP Stylist, 이달 VP Zone 마네킹 착장 기획해줘"
+"Rounding Checker, 이 사진 보고 라운딩 체크해줘"
 "Visual Director, 이 사진 분석해줘. 개선점 TOP 3"
-"AI VMD Creator, Zone A Before/After 시뮬레이션 Higgsfield 프롬프트 만들어줘"
-"AI VMD Creator, 2025 SS 신학기 무드보드용 프롬프트 3가지"
-"Space Planner, Zone A 신학기 배치안 3가지"
-"Trend Researcher, 2025 SS 키즈 글로벌 트렌드 TOP 5"
-"Season Planner, 2025 SS 신학기 기획안 만들어줘"
-"Feedback Coach, [변경 내용] 리스크 있어?"
-"Feedback Coach, [시즌명] 회고 정리해줘"
+"Open Planner, ○○점 오픈 레이아웃 만들어줘"
+"Education Editor, 이번 달 가이드 설명 자료 만들어줘"
 ```

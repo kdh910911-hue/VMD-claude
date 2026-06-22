@@ -9,30 +9,30 @@
 
 | 요청 키워드/유형 | 자동 호출 에이전트 |
 |---------------|-----------------|
+| 가이드, 진열맵, 배포, 이달의 가이드 | Guide Maker |
+| 오픈, 신규 매장, 레이아웃, 평당 비용, 세금계산서 | Open Planner |
+| VP Zone, 마네킹 착장, 키룩, 광고 착장, 코디 | VP Stylist |
+| 라운딩, 점검, 체크리스트, 가이드 준수, 문제점 | Rounding Checker |
+| 교육, 직원 교육, 교육 자료, 온보딩 | Education Editor |
 | 사진 분석, 컬러, 볼륨, 포컬포인트 | Visual Director |
-| AI 시뮬레이션, 무드보드, Before/After, Higgsfield 프롬프트, 시각화, 프롬프트 설계 | AI VMD Creator |
-| 배치, 동선, 도면, Zone 변경, 집기, 데드존 | Space Planner |
-| 트렌드, 경쟁사, Zara Kids, H&M, 글로벌 | Trend Researcher |
-| 시즌 기획, 테마, 컨셉, 컬러 팔레트, plan.md | Season Planner |
-| 리스크, 대안, 회고, KPT, 다음 시즌 | Feedback Coach |
 
 ---
 
 ## 복합 요청 처리 순서
 
 ```
-사진 분석 + 배치 변경 요청
-  → Visual Director 먼저 (현황 파악)
-  → Space Planner 후 (변경안 설계)
-  → AI VMD Creator (Before/After 시뮬레이션 시각화)
+라운딩 현장 요청
+  → Visual Director 먼저 (사진 분석)
+  → Rounding Checker 후 (체크리스트 + 즉각 개선안)
 
-시즌 준비 요청
-  → Trend Researcher 먼저 (트렌드 인풋)
-  → Season Planner 후 (기획 문서화)
-  → AI VMD Creator (시즌 무드보드 + Higgsfield 프롬프트)
+월초 가이드 준비 요청
+  → Guide Maker (진열맵 + 실행 가이드 초안)
+  → VP Stylist (VP Zone + 착장 코디)
+  → Education Editor (가이드 설명 자료)
 
-변경 완료 후 요청
-  → Feedback Coach (회고 + record.md 저장)
+신규 매장 오픈 요청
+  → Open Planner (레이아웃 기획 + 비용 산출)
+  → Visual Director (오픈 후 사진 분석)
 ```
 
 ---
