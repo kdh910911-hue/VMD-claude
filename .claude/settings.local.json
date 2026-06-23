@@ -7,7 +7,12 @@
       "Bash(claude mcp *)",
       "PowerShell(git *)",
       "Bash(git *)",
-      "mcp__github__get_file_contents"
+      "mcp__github__get_file_contents",
+      "Bash(mv \"D:/0.vmd ops/guides/2026/6p/6P 고양스타필드\" \"D:/0.vmd ops/rounding/2026-06/\")",
+      "Bash(mv \"D:/0.vmd ops/guides/2026/6p/6P 수원스타필드\" \"D:/0.vmd ops/rounding/2026-06/\")",
+      "Bash(mv \"D:/0.vmd ops/guides/2026/6p/6P 용산아이파크몰\" \"D:/0.vmd ops/rounding/2026-06/\")",
+      "Bash(mkdir -p \"D:/0.vmd ops/rounding/2026-06/6P 고양스타필드\")",
+      "Bash(mv \"D:/0.vmd ops/rounding/2026-06/KakaoTalk_\"* \"D:/0.vmd ops/rounding/2026-06/6P 고양스타필드/\")"
     ]
   },
   "hooks": {

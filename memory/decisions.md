@@ -43,8 +43,23 @@
 
 ## VMD 실무 결정
 ```
-(시즌 작업하면서 채워나갈 것)
-예시:
-[YYYY-MM-DD] SS25 신학기 컨셉: ○○
-[YYYY-MM-DD] Zone A 집기 구성 변경: 행거 3개 → 2개 + 테이블 1개
+[2026-06-22] 에이전트 시스템 실무 6인으로 개편
+  이전: Visual Director / AI VMD Creator / Space Planner /
+        Trend Researcher / Season Planner / Feedback Coach
+  변경: Guide Maker / Open Planner / VP Stylist /
+        Rounding Checker / Education Editor / Visual Director
+  이유: 실제 월별 업무 사이클(가이드 제작/라운딩/오픈) 중심으로 재편
+
+[2026-06-22] guides/2026/ 폴더 구조 확정
+  구성: 월별(1P~7P) / 매장 타입별(단독/인샵, A·B/C매장)
+  파일 2종: 월간스파오 PDF(대) + 진열맵 PDF(소)
+  보관 정책: 월간스파오 PDF(100MB+) → 로컬 전용 / 진열맵 PDF → GitHub 포함
+
+[2026-06-23] 7P 단독 집기 스펙 확정
+  H2600 행거 2단: 6칸 / 4칸
+    상단봉 높이: 600~650mm (상의)
+    하단봉 높이: 700~1000mm (하의)
+    하부장: 350mm
+  H1800 행거 1단: 6칸 / 4칸
+    하부장: 350mm
 ```

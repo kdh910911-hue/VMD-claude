@@ -14,3 +14,6 @@ desktop.ini
 # 임시 파일
 *.tmp
 *.log
+
+# 월간 가이드 대용량 PDF (100MB+ → GitHub 업로드 불가, 로컬만 보관)
+guides/**/*월간스파오*.pdf
